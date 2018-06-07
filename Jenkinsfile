@@ -10,7 +10,7 @@ pipeline {
       }
       steps {
         sh '''npm install
-npm run script'''
+npm run build'''
         sh '''npm install
 npm run build'''
       }
