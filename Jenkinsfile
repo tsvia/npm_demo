@@ -9,7 +9,10 @@ pipeline {
 
       }
       steps {
-        sh ''''''
+        sh '''npm install
+npm run script'''
+        sh '''npm install
+npm run build'''
       }
     }
   }
