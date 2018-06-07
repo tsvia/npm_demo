@@ -24,7 +24,7 @@ npm run build'''
       steps {
         sh '''mkdir playbook/files
 cp nodejs-demoapp.zip playbook/files/nodejs-demoapp.zip
-ansible-playbook playbooks/deploy_dev.vml'''
+ansible-playbook playbooks/deploy_dev.yml'''
       }
     }
   }
