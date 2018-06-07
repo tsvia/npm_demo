@@ -20,6 +20,13 @@ npm run build'''
         sh 'npm test'
       }
     }
+    stage('Deploy') {
+      steps {
+        sh '''mkdir playbook/files
+cp nodejs-demoapp.zip playbook/files/nodejs-demoapp.zip
+ansible-playbook playbooks/deply_dev.vml'''
+      }
+    }
   }
   parameters {
     choice(name: 'REQUESTED_ACTION', choices: '''Build
